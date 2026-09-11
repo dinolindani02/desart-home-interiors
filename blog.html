@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- ==== SEO ==== -->
+<meta name="description" content="Practical guides on modular kitchens, wardrobes, materials and budgeting, plus design stories from our studio in Kanyakumari, Tamil Nadu." />
+<link rel="canonical" href="https://www.desart.in/blog.html" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Desart Builders Pvt Ltd" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="geo.region" content="IN-TN" />
+<meta name="geo.placename" content="Marthandam, Kanyakumari" />
+<meta name="geo.position" content="8.3106;77.2214" />
+<meta name="ICBM" content="8.3106, 77.2214" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Desart Home Interiors" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:title" content="Interior Design Blog &amp; Guides | Desart Home Interiors" />
+<meta property="og:description" content="Practical guides on modular kitchens, wardrobes, materials and budgeting, plus design stories from our studio in Kanyakumari, Tamil Nadu." />
+<meta property="og:url" content="https://www.desart.in/blog.html" />
+<meta property="og:image" content="https://www.desart.in/images/interior.webp" />
+<meta property="og:image:alt" content="Interior design notes and guides from Desart" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Interior Design Blog &amp; Guides | Desart Home Interiors" />
+<meta name="twitter:description" content="Practical guides on modular kitchens, wardrobes, materials and budgeting, plus design stories from our studio in Kanyakumari, Tamil Nadu." />
+<meta name="twitter:image" content="https://www.desart.in/images/interior.webp" />
+<link rel="icon" type="image/png" href="images/logo-dark.png" />
+<link rel="apple-touch-icon" href="images/logo-dark.png" />
+<!-- /SEO -->
+<title>Interior Design Blog &amp; Guides | Desart Home Interiors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Cormorant Garamond', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          fg: '#0a0a0a',
+          muted: '#6b6b6b',
+          border: '#e5e5e5',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0a0a0a;
+    --muted: #6b6b6b;
+    --border: #e5e5e5;
+    --accent: #0a0a0a;
+    --card: #ffffff;
+    --bg2: #f7f7f7;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+  body.modal-open { overflow: hidden; }
+
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--fg); }
+
+  /* ── LOCATION TAB BAR (shared across all pages) ── */
+  .locbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1001;
+    height: 36px;
+    display: flex; align-items: center; justify-content: flex-end; gap: 1.1rem;
+    padding: 0 2.5rem;
+    background: rgba(10,10,10,0.42);
+    backdrop-filter: blur(20px) saturate(1.3);
+    -webkit-backdrop-filter: blur(20px) saturate(1.3);
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    transition: background 0.4s ease, border-color 0.4s ease;
+  }
+  .locbar.scrolled { background: rgba(255,255,255,0.86); border-bottom-color: rgba(0,0,0,0.06); }
+  .locbar-label {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(255,255,255,0.5); font-weight: 500; white-space: nowrap;
+    transition: color 0.4s ease;
+  }
+  .locbar-label svg { width: 12px; height: 12px; flex-shrink: 0; }
+  .locbar.scrolled .locbar-label { color: var(--muted); }
+  .locbar-links { display: flex; align-items: center; gap: 0.3rem; }
+  .locbar-links a {
+    padding: 0.28rem 0.85rem; border-radius: 3px;
+    font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255,255,255,0.72); text-decoration: none; font-weight: 400;
+    white-space: nowrap;
+    transition: color 0.25s, background 0.25s;
+  }
+  .locbar-links a:hover { color: #fff; background: rgba(255,255,255,0.12); }
+  .locbar-links a.active { color: #fff; background: rgba(255,255,255,0.16); font-weight: 500; }
+  .locbar.scrolled .locbar-links a { color: var(--muted); }
+  .locbar.scrolled .locbar-links a:hover { color: var(--fg); background: rgba(10,10,10,0.06); }
+  .locbar.scrolled .locbar-links a.active { color: var(--fg); background: rgba(10,10,10,0.08); }
+
+  /* NAV (shared with index.html) */
+  nav {
+    position: fixed; top: 36px; left: 0; right: 0; z-index: 1000;
+    padding: 0 2.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+    transition: background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(28px) saturate(1.4);
+    -webkit-backdrop-filter: blur(28px) saturate(1.4);
+    border-bottom: 1px solid rgba(229,229,229,0.6);
+  }
+  .nav-logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  nav.scrolled .nav-logo { color: var(--fg); }
+  .nav-logo .logo-light,
+  .nav-logo .logo-dark { transition: opacity 0.4s ease; }
+  .nav-logo .logo-dark { position: absolute; left: 0; opacity: 0; }
+  nav.scrolled .nav-logo .logo-light { opacity: 0; }
+  nav.scrolled .nav-logo .logo-dark { opacity: 1; }
+  .nav-links { display: flex; gap: 2.5rem; align-items: center; }
+  .nav-links a {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    transition: color 0.25s;
+    font-weight: 400;
+  }
+  nav.scrolled .nav-links a { color: var(--muted); }
+  .nav-links a:hover { color: #ffffff; }
+  nav.scrolled .nav-links a:hover { color: var(--fg); }
+  .nav-links a.active { color: #ffffff; font-weight: 600; }
+  nav.scrolled .nav-links a.active { color: var(--fg); }
+  .nav-cta {
+    padding: 0.5rem 1.4rem;
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.5);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s, border-color 0.3s, box-shadow 0.3s !important;
+    border-radius: 4px;
+    font-weight: 400;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+  }
+  .nav-cta:hover { background: rgba(255,255,255,0.28) !important; border-color: rgba(255,255,255,0.85) !important; }
+  nav.scrolled .nav-cta { background: rgba(10,10,10,0.06) !important; border-color: rgba(10,10,10,0.55) !important; color: var(--fg) !important; box-shadow: none; }
+  nav.scrolled .nav-cta:hover { background: var(--fg) !important; color: white !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column; gap: 5.5px;
+    cursor: pointer; background: none; border: none; padding: 6px;
+    outline: none;
+  }
+  .hamburger span {
+    display: block; height: 1.5px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 1px;
+    transform-origin: center;
+    transition: transform 0.38s cubic-bezier(0.4,0,0.2,1), opacity 0.22s ease, width 0.28s ease, background 0.4s ease;
+  }
+  .hamburger span:nth-child(1) { width: 22px; }
+  .hamburger span:nth-child(2) { width: 12px; margin-left: auto; }
+  .hamburger span:nth-child(3) { width: 22px; }
+  nav.scrolled .hamburger span { background: var(--fg); }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5.5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5.5px); }
+
+  .mobile-nav {
+    position: fixed;
+    top: 104px; left: 0; right: 0;
+    z-index: 998;
+    background: rgba(10,10,10,0.62);
+    backdrop-filter: blur(32px) saturate(1.5);
+    -webkit-backdrop-filter: blur(32px) saturate(1.5);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+    transform: translateY(-6px);
+    opacity: 0; pointer-events: none;
+    transition: transform 0.36s cubic-bezier(0.4,0,0.2,1), opacity 0.28s ease;
+  }
+  .mobile-nav.nav-scrolled {
+    background: rgba(255,255,255,0.84);
+    backdrop-filter: blur(32px) saturate(1.6);
+    -webkit-backdrop-filter: blur(32px) saturate(1.6);
+    border-color: rgba(0,0,0,0.07);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  }
+  .mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+  .mobile-nav a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 1.8rem;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: background 0.2s, color 0.2s, padding-left 0.22s;
+  }
+  .mobile-nav a.active { color: #ffffff; font-weight: 600; }
+  .mobile-nav.nav-scrolled a.active { color: var(--fg); }
+  .mobile-nav a::after {
+    content: '';
+    display: inline-block; width: 14px; height: 14px; flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.35)' stroke-width='1.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='9,18 15,12 9,6'/%3E%3C/svg%3E");
+    background-size: contain; background-repeat: no-repeat;
+    transition: transform 0.22s, opacity 0.22s;
+  }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a:hover { background: rgba(255,255,255,0.06); color: #fff; padding-left: 2.1rem; }
+  .mobile-nav a:hover::after { transform: translateX(4px); opacity: 1; }
+  .mobile-nav.nav-scrolled a { color: var(--fg); border-color: rgba(0,0,0,0.06); }
+  .mobile-nav.nav-scrolled a::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='rgba(0,0,0,0.28)' stroke-width='1.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='9,18 15,12 9,6'/%3E%3C/svg%3E");
+  }
+  .mobile-nav.nav-scrolled a:hover { background: rgba(0,0,0,0.04); color: var(--fg); }
+
+  section { padding: 7rem 6rem; }
+  .section-label {
+    font-size: 0.58rem; letter-spacing: 0.38em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem; font-weight: 500;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: #1a1a1a;
+    letter-spacing: -0.01em;
+  }
+  .section-title em { font-style: italic; color: var(--muted); }
+
+  /* BLOG HERO */
+  #blog-hero {
+    position: relative;
+    height: 50vh; min-height: 420px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .blog-hero-bg {
+    position: absolute; inset: 0;
+    background-image: url('images/hero4.webp');
+    background-size: cover; background-position: center;
+    filter: brightness(0.4);
+  }
+  .blog-hero-inner { position: relative; z-index: 5; max-width: 760px; }
+  .blog-hero-label {
+    font-size: 0.62rem; letter-spacing: 0.32em; text-transform: uppercase;
+    color: rgba(255,255,255,0.6); margin-bottom: 1.2rem; font-weight: 400;
+  }
+  .blog-hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    font-weight: 400; color: #fff; line-height: 1.1; letter-spacing: -0.01em;
+  }
+  .blog-hero-title em { font-style: italic; color: rgba(255,255,255,0.7); }
+  .blog-hero-sub {
+    margin-top: 1.3rem; font-size: 0.92rem; color: rgba(255,255,255,0.65);
+    line-height: 1.8; font-weight: 300;
+  }
+
+  /* BLOG GRID */
+  #blog-grid { background: #ffffff; padding-top: 6rem; }
+  .blog-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+  }
+  .blog-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex; flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.25,1,0.5,1), box-shadow 0.4s ease;
+  }
+  .blog-card:hover { transform: translateY(-8px); box-shadow: 0 24px 56px rgba(0,0,0,0.1); }
+  .blog-card-img-wrap { position: relative; height: 220px; overflow: hidden; }
+  .blog-card-img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25,1,0.5,1);
+  }
+  .blog-card:hover .blog-card-img { transform: scale(1.08); }
+  .blog-card-category {
+    position: absolute; top: 14px; left: 14px;
+    background: rgba(255,255,255,0.92);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase;
+    font-weight: 600; color: #1a1a1a;
+  }
+  .blog-card-body { padding: 1.6rem 1.7rem 1.9rem; display: flex; flex-direction: column; flex: 1; }
+  .blog-card-meta {
+    font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 0.9rem;
+  }
+  .blog-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem; font-weight: 500; line-height: 1.28;
+    color: #1a1a1a; margin-bottom: 0.85rem;
+  }
+  .blog-card-excerpt {
+    font-size: 0.85rem; color: #666; line-height: 1.75; font-weight: 300;
+    margin-bottom: 1.5rem; flex: 1;
+  }
+  .blog-card-readmore {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #b5916a; font-weight: 600;
+    align-self: flex-start;
+    background: none; border: none; cursor: pointer; padding: 0;
+    transition: color 0.3s;
+  }
+  .blog-card-readmore svg { width: 14px; height: 14px; transition: transform 0.3s; }
+  .blog-card-readmore:hover { color: #1a1a1a; }
+  .blog-card-readmore:hover svg { transform: translateX(4px); }
+
+  /* MODAL */
+  .blog-modal-overlay {
+    position: fixed; inset: 0; z-index: 2000;
+    background: rgba(8,8,8,0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex; justify-content: center;
+    padding: 5rem 1.5rem 3rem;
+    overflow-y: auto;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+  .blog-modal-overlay.open { opacity: 1; pointer-events: all; }
+  .blog-modal {
+    background: #fff;
+    max-width: 760px; width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    transform: translateY(30px) scale(0.98);
+    transition: transform 0.4s cubic-bezier(0.25,1,0.5,1);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+  }
+  .blog-modal-overlay.open .blog-modal { transform: translateY(0) scale(1); }
+  .blog-modal-close {
+    position: absolute; top: 1.2rem; right: 1.2rem;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(0,0,0,0.08);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; z-index: 10;
+    transition: background 0.25s;
+  }
+  .blog-modal-close:hover { background: #fff; }
+  .blog-modal-close svg { width: 16px; height: 16px; color: #1a1a1a; }
+  .blog-modal-img { width: 100%; height: 320px; object-fit: cover; display: block; }
+  .blog-modal-body { padding: 2.4rem 3rem 3rem; }
+  .blog-modal-meta {
+    display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap;
+    font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 1.2rem; font-weight: 500;
+  }
+  .blog-modal-meta .cat-pill {
+    background: #f2ede7; color: #8a6a45; padding: 0.3rem 0.8rem; border-radius: 20px;
+  }
+  .blog-modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+    font-weight: 500; line-height: 1.15; color: #1a1a1a; margin-bottom: 1.6rem;
+  }
+  .blog-modal-content p { margin-bottom: 1.2rem; font-size: 0.92rem; line-height: 1.9; color: #444; font-weight: 300; }
+  .blog-modal-content h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 500;
+    margin: 1.8rem 0 0.9rem; color: #1a1a1a;
+  }
+  .blog-modal-cta {
+    margin-top: 2.2rem; padding-top: 2.2rem; border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; flex-wrap: wrap;
+  }
+  .blog-modal-cta p { font-size: 0.82rem; color: var(--muted); font-weight: 300; margin: 0; max-width: 320px; }
+  .blog-modal-cta a {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 0.85rem 1.8rem;
+    background: rgba(10,10,10,0.92); color: #fff;
+    border-radius: 4px; text-decoration: none;
+    font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500;
+    transition: background 0.3s; white-space: nowrap;
+  }
+  .blog-modal-cta a:hover { background: #000; }
+
+  /* FLOATING */
+  .float-btns { position: fixed; bottom: 2rem; right: 2rem; display: flex; flex-direction: column; gap: 0.9rem; z-index: 500; }
+  .float-btn {
+    width: 50px; height: 50px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; position: relative;
+    transition: transform 0.3s, box-shadow 0.3s, outline-color 0.3s;
+  }
+  .float-btn:hover { transform: scale(1.1); }
+  .float-btn-wa {
+    background: #25D366; border: 2px solid #22c35e;
+    outline: 2px solid rgba(37,211,102,0.45); outline-offset: 4px;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  }
+  .float-btn-wa:hover { outline-color: rgba(37,211,102,0.82); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+  .float-btn-call {
+    background: var(--fg); border: 2px solid #111111;
+    outline: 2px solid rgba(10,10,10,0.32); outline-offset: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  }
+  .float-btn-call:hover { outline-color: rgba(10,10,10,0.65); box-shadow: 0 6px 28px rgba(0,0,0,0.32); }
+  .float-btn svg { width: 20px; height: 20px; color: #fff; }
+  .float-label { position: absolute; right: 58px; background: white; border: 1px solid var(--border); border-radius: 6px; padding: 0.3rem 0.8rem; font-size: 0.62rem; letter-spacing: 0.1em; color: var(--fg); white-space: nowrap; opacity: 0; transform: translateX(8px); transition: all 0.3s; pointer-events: none; box-shadow: 0 2px 12px rgba(0,0,0,0.1); font-weight: 400; }
+  .float-btn:hover .float-label { opacity: 1; transform: translateX(0); }
+
+  /* FOOTER */
+  footer {
+    position: relative;
+    background-image: url('images/footer.jpg');
+    background-size: cover; background-position: center; color: #fff;
+  }
+  footer::before { content: ''; position: absolute; inset: 0; background: rgba(5, 5, 5, 0.82); z-index: 0; }
+  .footer-inner {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem;
+    padding: 4.5rem 16rem 3.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-logo { height: 44px; width: auto; display: block; margin-bottom: 1.2rem; object-fit: contain; object-position: left; }
+  .footer-tagline { font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.75; font-weight: 300; max-width: 220px; margin-bottom: 1.6rem; }
+  .footer-social { display: flex; gap: 0.6rem; }
+  .footer-social a {
+    width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.25); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.3s, background 0.3s; text-decoration: none;
+  }
+  .footer-social a:hover { border-color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.08); }
+  .footer-social svg { width: 13px; height: 13px; color: #fff; }
+  .footer-col-title { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; color: #fff; margin-bottom: 1.4rem; }
+  .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+  .footer-links a { font-size: 0.82rem; color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 300; transition: color 0.25s; }
+  .footer-links a:hover { color: #fff; }
+  .footer-contact-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.1rem; }
+  .footer-contact-list li { display: flex; align-items: flex-start; gap: 0.75rem; }
+  .footer-contact-list svg { width: 14px; height: 14px; color: rgba(255,255,255,0.6); flex-shrink: 0; margin-top: 2px; }
+  .footer-contact-list span { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.6; }
+  .footer-bottom { position: relative; z-index: 1; padding: 1.6rem 6rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; }
+  .footer-locations { display: flex; align-items: center; justify-content: center; gap: 0.7rem; flex-wrap: wrap; }
+  .footer-loc-label { font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-right: 0.3rem; }
+  .footer-locations a { font-size: 0.74rem; color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 300; transition: color 0.25s; }
+  .footer-locations a:hover { color: #fff; }
+  .fl-dot { color: rgba(255,255,255,0.22); font-size: 0.7rem; }
+  .footer-copy { font-size: 0.68rem; color: rgba(255,255,255,0.35); letter-spacing: 0.04em; text-align: center; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  @media (max-width: 1200px) {
+    .blog-cards-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 1024px) {
+    section { padding: 5rem 2.5rem; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 2.5rem; padding: 3.5rem 2.5rem 3rem; }
+    .footer-bottom { padding: 1.2rem 2.5rem; }
+  }
+  @media (max-width: 768px) {
+    .locbar { padding: 0 1rem; justify-content: center; gap: 0.2rem; }
+    .locbar-label { display: none; }
+    .locbar-links a { padding: 0.25rem 0.6rem; font-size: 0.58rem; letter-spacing: 0.12em; }
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    section { padding: 4rem 1.5rem; }
+    .blog-cards-grid { grid-template-columns: 1fr; gap: 1.8rem; }
+    .blog-modal-body { padding: 2rem 1.6rem 2rem; }
+    .blog-modal-img { height: 220px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 1.5rem 1.5rem; padding: 2.5rem 1.5rem 2rem; }
+    .footer-bottom { padding: 1rem 1.5rem; }
+    .footer-tagline { max-width: 100%; }
+  }
+  @media (max-width: 480px) {
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 1.2rem 1rem; padding: 2rem 1.2rem 1.5rem; }
+    .footer-inner .footer-col:first-child { grid-column: 1 / -1; }
+    .blog-modal-cta { flex-direction: column; align-items: flex-start; }
+    .blog-modal-cta a { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Floating Buttons -->
+<div class="float-btns">
+  <a href="https://api.whatsapp.com/send/?phone=+918807040606&text=Hello%20Desart%20Builders!" target="_blank" class="float-btn float-btn-wa">
+    <span class="float-label">WhatsApp Us</span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="tel:+918807040606" class="float-btn float-btn-call">
+    <span class="float-label">Call Now</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.68 19.79 19.79 0 01.36 2.07 2 2 0 012.33 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-.73a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+  </a>
+</div>
+
+<!-- LOCATION TAB BAR -->
+<div class="locbar" id="locbar">
+  <span class="locbar-label">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Our Locations
+  </span>
+  <div class="locbar-links">
+    <a href="marthandam.html">Marthandam</a>
+    <a href="nagercoil.html">Nagercoil</a>
+    <a href="trivandrum.html">Trivandrum</a>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="index.html#offer">Services</a>
+  <a href="index.html#interiors">Portfolio</a>
+  <a href="index.html#testimonials">Reviews</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo-light.png" class="logo-light" alt="Desart Interiors" width="150">
+    <img src="images/logo-dark.png" class="logo-dark" alt="Desart Interiors" width="150">
+  </a>
+  <div class="nav-links">
+    <a href="index.html#offer">Services</a>
+    <a href="index.html#interiors">Portfolio</a>
+    <a href="index.html#testimonials">Reviews</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BLOG HERO -->
+<section id="blog-hero">
+  <div class="blog-hero-bg"></div>
+  <div class="blog-hero-inner">
+    <div class="blog-hero-label">Desart Journal</div>
+    <h1 class="blog-hero-title">Stories, Ideas &amp; <em>Inspiration</em></h1>
+    <p class="blog-hero-sub">Notes from our studio on design, materials and the craft of building homes that last — from Kanyakumari and beyond.</p>
+  </div>
+</section>
+
+<!-- BLOG GRID -->
+<section id="blog-grid">
+  <div class="section-label reveal">Our Journal</div>
+  <h2 class="section-title reveal reveal-delay-1">Latest From The <em>Studio</em></h2>
+  <div class="blog-cards-grid" id="blogGrid"></div>
+</section>
+
+<!-- MODAL -->
+<div class="blog-modal-overlay" id="blogModalOverlay">
+  <div class="blog-modal">
+    <button class="blog-modal-close" id="blogModalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div id="blogModalContent"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="images/logo-light.png" alt="Desart Builders" class="footer-logo" />
+      <p class="footer-tagline">End-to-end excellence in architecture, construction and interior designs.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/desart_builders/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/DESARTBUILDERS" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=+918807040606" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Services</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#offer">Consultation</a></li>
+        <li><a href="index.html#offer">Design</a></li>
+        <li><a href="index.html#offer">Production</a></li>
+        <li><a href="index.html#offer">Execution</a></li>
+        <li><a href="index.html#offer">Hand over</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Explore</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#interiors">Projects</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Contact Us</h4>
+      <ul class="footer-contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.68 19.79 19.79 0 01.36 2.07 2 2 0 012.33 0h3a2 2 0 012 1.72c.128.96.344 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-.73a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>+91 88070 40606 </span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Marthandam, Kanyakumari,<br/>Tamil Nadu, India.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-locations">
+      <span class="footer-loc-label">Our Locations</span>
+      <a href="marthandam.html">Marthandam</a><span class="fl-dot">·</span>
+      <a href="nagercoil.html">Nagercoil</a><span class="fl-dot">·</span>
+      <a href="trivandrum.html">Trivandrum</a>
+    </div>
+    <p class="footer-copy">Copyright &copy; 2026 All Rights Reserved by Desart Builders pvt ltd.</p>
+  </div>
+</footer>
+
+<script>
+  // ── NAV SCROLL / MOBILE NAV ──
+  const navbar = document.getElementById('navbar');
+  const mobileNav = document.getElementById('mobileNav');
+  const hamburger = document.getElementById('hamburger');
+  const locbar = document.getElementById('locbar');
+  let navOpen = false;
+  function toggleMobileNav() {
+    navOpen = !navOpen;
+    hamburger.classList.toggle('open', navOpen);
+    mobileNav.classList.toggle('open', navOpen);
+  }
+  function closeMobileNav() {
+    navOpen = false;
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+  }
+  document.addEventListener('click', (e) => {
+    if (navOpen && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) closeMobileNav();
+  });
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 80;
+    navbar.classList.toggle('scrolled', scrolled);
+    mobileNav.classList.toggle('nav-scrolled', scrolled);
+    if (locbar) locbar.classList.toggle('scrolled', scrolled);
+    if (navOpen) closeMobileNav();
+  });
+  document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeMobileNav));
+
+  // ── BLOG DATA ──
+  const blogPosts = [
+    {
+      id: 'minimalist-interior-design',
+      category: 'Design Trends',
+      date: 'June 15, 2026',
+      readTime: '5 min read',
+      title: 'The Rise of Minimalist Interior Design in Tamil Nadu Homes',
+      image: 'images/interior.webp',
+      excerpt: 'Why homeowners across Kanyakumari and beyond are trading ornamentation for clarity — and how to do it without losing warmth.',
+      content: `
+        <p>Walk into any new home we've designed over the last two years and you'll notice a quiet shift. Fewer accent walls, fewer competing finishes, far more breathing room. Clients are asking for calm — spaces that don't shout for attention the moment you walk in, but reveal their detailing slowly, the way a well-tailored room should.</p>
+        <p>This isn't the cold, clinical minimalism you sometimes see in international showrooms. What we build is warm minimalism — a restrained palette of natural wood tones, soft whites and stone textures, layered with enough personality to still feel like home. The discipline is in the editing, not in stripping everything away.</p>
+        <h3>Where it actually shows up</h3>
+        <p>In practice, this means fewer visible hinges and handles, kitchens with hidden storage rather than open shelving that needs constant styling, and lighting plans that do more work than a single centre chandelier ever could. It also means slowing down at the material selection stage — a single honest material used well outperforms three competing ones every time.</p>
+        <p>Minimalism done right isn't about spending less. It's about spending with intention — on the things you touch and see every day, and quietly skipping the things you don't. That's the brief we bring to every home, regardless of budget.</p>
+      `
+    },
+    {
+      id: 'modular-kitchen-guide',
+      category: 'Modular Kitchens',
+      date: 'June 2, 2026',
+      readTime: '6 min read',
+      title: 'Modular Kitchens 101: Designing a Kitchen That Works as Hard as You Do',
+      image: 'images/kitchen.webp',
+      excerpt: 'From the working triangle to soft-close hardware — everything that separates a kitchen that looks good from one that lives well.',
+      content: `
+        <p>A kitchen photographs well long before you know if it actually works. The real test comes weeks later — when the person cooking isn't reaching across a hot stove for the salt, or opening three drawers to find a ladle. That's the difference between a kitchen styled for a shoot and one designed for a life.</p>
+        <p>We start every modular kitchen with the working triangle — the distance between stove, sink and refrigerator — before a single finish is chosen. Get that geometry right and everything downstream, from counter height to cabinet depth, falls into place around how your household actually cooks, not how a catalogue assumes it does.</p>
+        <h3>The details that outlast the trend cycle</h3>
+        <p>Soft-close hinges and channels aren't a luxury add-on anymore — they're the difference between a kitchen that still feels new in year five and one that starts rattling in month six. Similarly, we push clients toward BWP-grade plywood carcasses and factory-edge-banded shutters, because moisture and daily wear are unforgiving in ways a showroom sample never reveals.</p>
+        <p>Style still matters — handleless profiles, matte or high-gloss finishes, waterfall countertops, breakfast islands. But we sequence the conversation deliberately: function, durability, then aesthetics. Kitchens designed in that order tend to need far less "fixing" a year in.</p>
+      `
+    },
+    {
+      id: 'wardrobe-storage-wisdom',
+      category: 'Wardrobes',
+      date: 'May 20, 2026',
+      readTime: '4 min read',
+      title: 'Wardrobe Wisdom: Maximising Storage Without Compromising Style',
+      image: 'images/wardrobe.webp',
+      excerpt: 'Sliding vs hinged, loft units, modular inserts — a practical guide to wardrobes that stay organised long after the designer leaves.',
+      content: `
+        <p>Every wardrobe looks organised on handover day. The real design challenge is keeping it that way a year later, once the shoes, seasonal linen and everything else that doesn't have a home finds its way in. Good wardrobe design plans for that mess in advance, so there's always a place for it.</p>
+        <p>We size internal configurations — shelf height, hanging space, drawer depth — around what a family actually owns, not a generic ratio. That's why we walk clients through a simple inventory before finalising layouts: how many long garments, how many folded stacks, how much luggage needs a home. It sounds unglamorous, but it's the single biggest predictor of a wardrobe that stays tidy.</p>
+        <h3>Sliding, hinged, or a mix</h3>
+        <p>Sliding shutters suit compact bedrooms where door swing eats usable floor space; hinged shutters give full-width access and tend to feel more premium in larger rooms. Loft units above the main wardrobe are where we tuck away the things you need twice a year — festival linen, extra blankets, luggage — keeping eye-level storage reserved for daily use.</p>
+        <p>The finishing choices — laminate, veneer, PU, or acrylic — are the last decision, not the first. Get the internals right and the wardrobe will still be doing its job long after the finish has been forgotten.</p>
+      `
+    },
+    {
+      id: 'from-blueprint-to-handover',
+      category: 'Our Process',
+      date: 'May 8, 2026',
+      readTime: '5 min read',
+      title: 'From Blueprint to Handover: What to Expect When You Build With Desart',
+      image: 'images/design.webp',
+      excerpt: 'A transparent walkthrough of our architecture-to-interiors process — so you always know what happens next.',
+      content: `
+        <p>One of the most common questions we hear from new clients is simple: "What happens after we sign?" It's a fair question — construction and interior projects have a reputation for vague timelines and vaguer communication. We've built our process specifically to remove that uncertainty.</p>
+        <p>It begins with a consultation to understand how you actually live — family size, routines, must-haves versus nice-to-haves — before a single line is drawn. From there, our architecture team develops layout options, followed by structural and material planning, and only then do our interior designers step in to shape the spaces you'll actually spend your evenings in.</p>
+        <h3>Milestones, not surprises</h3>
+        <p>Every project is broken into clearly defined stages — design freeze, civil work, MEP (electrical, plumbing, HVAC), carpentry and finishing, styling and handover — each with its own sign-off before we move forward. You always know which stage you're in and what's coming next.</p>
+        <p>Twelve years in, we've learned that the biggest driver of client satisfaction isn't the finish list — it's the absence of surprises. That's what this process is built to protect.</p>
+      `
+    },
+    {
+      id: 'tv-units-entertainment-walls',
+      category: 'Living Spaces',
+      date: 'April 24, 2026',
+      readTime: '4 min read',
+      title: 'TV Units & Entertainment Walls: The New Centrepiece of Indian Living Rooms',
+      image: 'images/tv.webp',
+      excerpt: 'How a well-designed media wall can anchor an entire living room — storage, cable management and style included.',
+      content: `
+        <p>The television used to sit on a unit. Now, increasingly, it's designed into a wall — a single considered composition of storage, texture and lighting that anchors the entire living room. It's one of the highest-impact, most requested changes we make to existing homes.</p>
+        <p>Done well, an entertainment wall solves three problems at once: it hides the tangle of set-top boxes and speaker cables behind clean panelling, it adds real storage for books, décor and everyday clutter, and it gives the room a visual focal point that doesn't rely on the TV being switched on to look intentional.</p>
+        <h3>Materials and layout choices that matter</h3>
+        <p>We favour a mix of textures over a single flat panel — fluted wood paneling paired with a stone or concrete-finish laminate, broken up with open display niches and concealed LED profile lighting. Floating units read lighter and make smaller living rooms feel larger, while floor-to-ceiling configurations suit homes wanting a bolder, more dramatic statement.</p>
+        <p>Whatever the style, we always plan cable routing and ventilation for electronics at the design stage — retrofitting it later is the single most common regret we hear from homeowners who built this themselves.</p>
+      `
+    },
+    {
+      id: 'science-of-long-lasting-interiors',
+      category: 'Materials',
+      date: 'April 10, 2026',
+      readTime: '6 min read',
+      title: 'The Science Behind Long-Lasting Interiors',
+      image: 'images/consultation.webp',
+      excerpt: 'Why ply grade, edge banding and hardware brand matter more than the finish you see on day one.',
+      content: `
+        <p>On handover day, every interior looks finished. What separates a project that ages gracefully from one that starts showing cracks within a year rarely has anything to do with the finish you can see — it's almost always about what's underneath it.</p>
+        <p>Tamil Nadu's coastal humidity is unforgiving on furniture carcasses. That's why we specify BWP (boiling waterproof) grade plywood as standard, not an upgrade, for any unit near a kitchen, bathroom or window. Cheaper MR-grade ply looks identical on day one and delaminates within a monsoon or two — a difference no client can spot in a showroom sample, but one that shows up in every service call we've ever attended for someone else's project.</p>
+        <h3>The unglamorous details that actually matter</h3>
+        <p>Edge banding — the thin strip sealing plywood edges — is where moisture enters first. We insist on hot-melt PUR adhesive edge banding over cheaper alternatives, because it's the difference between a shutter edge that stays sealed and one that swells within a year. Hardware is the same story: branded soft-close hinges and channels are rated for tens of thousands of open-close cycles; unbranded equivalents rarely make it past a few thousand before they sag.</p>
+        <p>None of this is visible in a rendering or a site visit. It's why we build our quotes around material specification sheets, not just square footage — so clients know exactly what's inside the walls of the home they're paying for.</p>
+      `
+    },
+    {
+      id: 'budgeting-for-your-dream-home',
+      category: 'Planning & Budgeting',
+      date: 'March 28, 2026',
+      readTime: '5 min read',
+      title: 'Budgeting for Your Dream Home: A Simplified Planning Guide',
+      image: 'images/hero2.webp',
+      excerpt: 'A clear-eyed look at what actually drives interior costs in Tamil Nadu — and how to plan without surprises.',
+      content: `
+        <p>Almost every client conversation eventually circles back to the same question: "What's this actually going to cost?" It's a reasonable thing to want clarity on early, and it's exactly why we've simplified how we structure budgets and payments for new projects.</p>
+        <p>Interior costs are driven by three levers — material grade, the amount of custom carpentry versus factory-modular components, and finish complexity. Two homes of identical size can differ in cost by 40% or more purely based on where clients choose to spend on visible finishes versus invisible structure. We walk every client through this trade-off before finalising a single design.</p>
+        <h3>A payment structure with no surprises</h3>
+        <p>Rather than a single upfront number, we break payments into stage-linked milestones — design and material lock-in, civil and carpentry commencement, mid-stage progress, and final handover — so you're only ever paying for work that's visibly complete. This also gives you natural checkpoints to review quality before the next stage begins.</p>
+        <p>Our advice to every new client is the same: set your material budget before your styling budget. A home with excellent bones and modest décor ages far better than the reverse.</p>
+      `
+    },
+    {
+      id: 'architecture-meets-lifestyle',
+      category: 'Architecture',
+      date: 'March 12, 2026',
+      readTime: '5 min read',
+      title: 'Architecture Meets Lifestyle: Designing Homes Around How You Actually Live',
+      image: 'images/home.webp',
+      excerpt: "Good architecture starts with a family's daily rhythm, not a floor plan template. Here's how we get it right.",
+      content: `
+        <p>Before we draw a single wall, we ask questions that have nothing to do with square footage: What time does the household wake up? Does anyone work from home? Is the kitchen a social space or a service one? Who actually cooks, and who actually cleans? The answers shape the plan far more than any Vastu chart or trend board.</p>
+        <p>A floor plan template assumes a generic family. Real households aren't generic — a joint family needs privacy zones a nuclear family doesn't, a family with elderly parents needs ground-floor accessibility a young couple wouldn't think to ask for, and a household that entertains often needs a living-dining flow that a quieter family would find wasteful.</p>
+        <h3>Designing for the next decade, not just the move-in date</h3>
+        <p>We also design with change in mind — a study that can become a nursery, a balcony that can be enclosed later, structural allowances for a future staircase to a second floor. Homes we've built a decade ago are still adapting comfortably to families that have grown, changed jobs, or welcomed new members, because that flexibility was built into the architecture from day one.</p>
+        <p>Good architecture isn't a style. It's a fit — between the building and the life being lived inside it. That's the standard every Desart project is measured against.</p>
+      `
+    }
+  ];
+
+  // ── RENDER BLOG GRID ──
+  const blogGrid = document.getElementById('blogGrid');
+  blogPosts.forEach((post, i) => {
+    const card = document.createElement('div');
+    card.className = 'blog-card reveal' + (i % 3 === 1 ? ' reveal-delay-1' : i % 3 === 2 ? ' reveal-delay-2' : '');
+    card.innerHTML = `
+      <div class="blog-card-img-wrap">
+        <img class="blog-card-img" src="${post.image}" alt="${post.title}" loading="lazy" />
+        <span class="blog-card-category">${post.category}</span>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">${post.date} &nbsp;•&nbsp; ${post.readTime}</div>
+        <h3 class="blog-card-title">${post.title}</h3>
+        <p class="blog-card-excerpt">${post.excerpt}</p>
+        <button class="blog-card-readmore" data-id="${post.id}">
+          Read More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </button>
+      </div>
+    `;
+    card.addEventListener('click', () => openBlogModal(post.id));
+    blogGrid.appendChild(card);
+  });
+
+  // ── MODAL ──
+  const blogModalOverlay = document.getElementById('blogModalOverlay');
+  const blogModalContent = document.getElementById('blogModalContent');
+  const blogModalClose = document.getElementById('blogModalClose');
+
+  function openBlogModal(id) {
+    const post = blogPosts.find(p => p.id === id);
+    if (!post) return;
+    blogModalContent.innerHTML = `
+      <img class="blog-modal-img" src="${post.image}" alt="${post.title}" />
+      <div class="blog-modal-body">
+        <div class="blog-modal-meta">
+          <span class="cat-pill">${post.category}</span>
+          <span>${post.date}</span>
+          <span>${post.readTime}</span>
+        </div>
+        <h2 class="blog-modal-title">${post.title}</h2>
+        <div class="blog-modal-content">${post.content}</div>
+        <div class="blog-modal-cta">
+          <p>Inspired by this? Let's design a space that works just as well for you.</p>
+          <a href="index.html#contact">Book a Consultation</a>
+        </div>
+      </div>
+    `;
+    blogModalOverlay.classList.add('open');
+    document.body.classList.add('modal-open');
+    blogModalOverlay.scrollTop = 0;
+  }
+
+  function closeBlogModal() {
+    blogModalOverlay.classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
+
+  blogModalClose.addEventListener('click', closeBlogModal);
+  blogModalOverlay.addEventListener('click', (e) => {
+    if (e.target === blogModalOverlay) closeBlogModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeBlogModal();
+  });
+
+  // ── SCROLL REVEAL ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const revObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revObserver.observe(el));
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.desart.in/#organization",
+      "name": "Desart Home Interiors",
+      "legalName": "Desart Builders Pvt Ltd",
+      "url": "https://www.desart.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.desart.in/#logo",
+        "url": "https://www.desart.in/images/logo-dark.png",
+        "caption": "Desart Home Interiors"
+      },
+      "image": {
+        "@id": "https://www.desart.in/#logo"
+      },
+      "email": "hello@desart.in",
+      "telephone": "+91-88070-40606",
+      "sameAs": [
+        "https://www.instagram.com/desart_builders/",
+        "https://www.facebook.com/DESARTBUILDERS"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.desart.in/#website",
+      "url": "https://www.desart.in/",
+      "name": "Desart Home Interiors",
+      "inLanguage": "en-IN",
+      "publisher": {
+        "@id": "https://www.desart.in/#organization"
+      }
+    },
+    {
+      "@type": [
+        "HomeAndConstructionBusiness",
+        "GeneralContractor"
+      ],
+      "@id": "https://www.desart.in/#localbusiness",
+      "name": "Desart Home Interiors",
+      "legalName": "Desart Builders Pvt Ltd",
+      "url": "https://www.desart.in/",
+      "image": "https://www.desart.in/images/home.webp",
+      "logo": "https://www.desart.in/images/logo-dark.png",
+      "telephone": "+91-88070-40606",
+      "email": "hello@desart.in",
+      "priceRange": "$",
+      "parentOrganization": {
+        "@id": "https://www.desart.in/#organization"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marthandam",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 8.3106,
+        "longitude": 77.2214
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Marthandam"
+        },
+        {
+          "@type": "City",
+          "name": "Nagercoil"
+        },
+        {
+          "@type": "City",
+          "name": "Thiruvananthapuram"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kanyakumari District"
+        }
+      ],
+      "knowsAbout": [
+        "Interior design",
+        "Modular kitchens",
+        "Wardrobes",
+        "False ceiling",
+        "Turnkey home interiors",
+        "Architecture"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/desart_builders/",
+        "https://www.facebook.com/DESARTBUILDERS"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.desart.in/blog.html#webpage",
+      "url": "https://www.desart.in/blog.html",
+      "name": "Interior Design Blog & Guides | Desart Home Interiors",
+      "description": "Practical guides on modular kitchens, wardrobes, materials and budgeting, plus design stories from our studio in Kanyakumari, Tamil Nadu.",
+      "isPartOf": {
+        "@id": "https://www.desart.in/#website"
+      },
+      "about": {
+        "@id": "https://www.desart.in/#localbusiness"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.desart.in/images/interior.webp"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.desart.in/blog.html#blog",
+      "name": "Desart Journal",
+      "description": "Practical guides on modular kitchens, wardrobes, materials and budgeting, plus design stories from our studio in Kanyakumari, Tamil Nadu.",
+      "url": "https://www.desart.in/blog.html",
+      "publisher": {
+        "@id": "https://www.desart.in/#organization"
+      },
+      "inLanguage": "en-IN",
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#minimalist-interior-design",
+          "headline": "The Rise of Minimalist Interior Design in Tamil Nadu Homes",
+          "description": "Why homeowners across Kanyakumari and beyond are trading ornamentation for clarity — and how to do it without losing warmth.",
+          "articleSection": "Design Trends",
+          "datePublished": "2026-06-15",
+          "dateModified": "2026-06-15",
+          "image": "https://www.desart.in/images/interior.webp",
+          "url": "https://www.desart.in/blog.html#minimalist-interior-design",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#modular-kitchen-guide",
+          "headline": "Modular Kitchens 101: Designing a Kitchen That Works as Hard as You Do",
+          "description": "From the working triangle to soft-close hardware — everything that separates a kitchen that looks good from one that lives well.",
+          "articleSection": "Modular Kitchens",
+          "datePublished": "2026-06-02",
+          "dateModified": "2026-06-02",
+          "image": "https://www.desart.in/images/kitchen.webp",
+          "url": "https://www.desart.in/blog.html#modular-kitchen-guide",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#wardrobe-storage-wisdom",
+          "headline": "Wardrobe Wisdom: Maximising Storage Without Compromising Style",
+          "description": "Sliding vs hinged, loft units, modular inserts — a practical guide to wardrobes that stay organised long after the designer leaves.",
+          "articleSection": "Wardrobes",
+          "datePublished": "2026-05-20",
+          "dateModified": "2026-05-20",
+          "image": "https://www.desart.in/images/wardrobe.webp",
+          "url": "https://www.desart.in/blog.html#wardrobe-storage-wisdom",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#from-blueprint-to-handover",
+          "headline": "From Blueprint to Handover: What to Expect When You Build With Desart",
+          "description": "A transparent walkthrough of our architecture-to-interiors process — so you always know what happens next.",
+          "articleSection": "Our Process",
+          "datePublished": "2026-05-08",
+          "dateModified": "2026-05-08",
+          "image": "https://www.desart.in/images/design.webp",
+          "url": "https://www.desart.in/blog.html#from-blueprint-to-handover",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#tv-units-entertainment-walls",
+          "headline": "TV Units & Entertainment Walls: The New Centrepiece of Indian Living Rooms",
+          "description": "How a well-designed media wall can anchor an entire living room — storage, cable management and style included.",
+          "articleSection": "Living Spaces",
+          "datePublished": "2026-04-24",
+          "dateModified": "2026-04-24",
+          "image": "https://www.desart.in/images/tv.webp",
+          "url": "https://www.desart.in/blog.html#tv-units-entertainment-walls",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#science-of-long-lasting-interiors",
+          "headline": "The Science Behind Long-Lasting Interiors",
+          "description": "Why ply grade, edge banding and hardware brand matter more than the finish you see on day one.",
+          "articleSection": "Materials",
+          "datePublished": "2026-04-10",
+          "dateModified": "2026-04-10",
+          "image": "https://www.desart.in/images/consultation.webp",
+          "url": "https://www.desart.in/blog.html#science-of-long-lasting-interiors",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#budgeting-for-your-dream-home",
+          "headline": "Budgeting for Your Dream Home: A Simplified Planning Guide",
+          "description": "A clear-eyed look at what actually drives interior costs in Tamil Nadu — and how to plan without surprises.",
+          "articleSection": "Planning & Budgeting",
+          "datePublished": "2026-03-28",
+          "dateModified": "2026-03-28",
+          "image": "https://www.desart.in/images/hero2.webp",
+          "url": "https://www.desart.in/blog.html#budgeting-for-your-dream-home",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://www.desart.in/blog.html#architecture-meets-lifestyle",
+          "headline": "Architecture Meets Lifestyle: Designing Homes Around How You Actually Live",
+          "description": "Good architecture starts with a family",
+          "articleSection": "Architecture",
+          "datePublished": "2026-03-12",
+          "dateModified": "2026-03-12",
+          "image": "https://www.desart.in/images/home.webp",
+          "url": "https://www.desart.in/blog.html#architecture-meets-lifestyle",
+          "author": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "publisher": {
+            "@id": "https://www.desart.in/#organization"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://www.desart.in/blog.html#webpage"
+          },
+          "inLanguage": "en-IN"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.desart.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.desart.in/blog.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
