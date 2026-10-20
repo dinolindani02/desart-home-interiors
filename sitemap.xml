@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.desart.in/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://interiors.desart.in/</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://interiors.desart.in/images/home.webp</image:loc></image:image>
+    <image:image><image:loc>https://interiors.desart.in/images/kitchen.webp</image:loc></image:image>
+    <image:image><image:loc>https://interiors.desart.in/images/wardrobe.webp</image:loc></image:image>
+    <image:image><image:loc>https://interiors.desart.in/images/tv.webp</image:loc></image:image>
+    <image:image><image:loc>https://interiors.desart.in/images/interior.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.desart.in/marthandam.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://interiors.desart.in/marthandam.html</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://interiors.desart.in/images/hero1.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.desart.in/nagercoil.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://interiors.desart.in/nagercoil.html</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://interiors.desart.in/images/hero2.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.desart.in/trivandrum.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://interiors.desart.in/trivandrum.html</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image><image:loc>https://interiors.desart.in/images/hero3.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://www.desart.in/blog.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <loc>https://interiors.desart.in/blog.html</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://interiors.desart.in/images/dr-nalam-master-bedroom.webp</image:loc></image:image>
   </url>
 </urlset>

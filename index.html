@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Home Interior Designers in Kanyakumari | Desart Interiors" />
 <meta name="twitter:description" content="Complete home interiors, modular kitchens and wardrobes - designed, built in our own factory and installed across Kanyakumari, Nagercoil and Trivandrum." />
-<meta name="twitter:image" content="https://www.desart.in/images/home.webp" />
+<meta name="twitter:image" content="https://interiors.desart.in/images/home.webp" />
 <link rel="icon" type="image/png" href="images/logo-dark.png" />
 <link rel="apple-touch-icon" href="images/logo-dark.png" />
 <!-- /SEO -->
@@ -1159,6 +1159,22 @@
     .why-divider { height: 26px; }
     .why-track { animation-duration: 32s; }
   }
+
+  /* FAQ */
+  #faq { background: #ffffff; }
+  .faq-list { margin: 3.2rem auto 0; max-width: 880px; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-q {
+    width: 100%; background: none; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+    padding: 1.5rem 0; text-align: left;
+    font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 400; color: #1a1a1a;
+  }
+  .faq-q svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--muted); stroke-width: 1.6; fill: none; transition: transform 0.35s ease; }
+  .faq-item.open .faq-q svg { transform: rotate(45deg); }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+  .faq-a p { font-size: 0.87rem; line-height: 1.95; color: #666; font-weight: 300; padding: 0 3rem 1.6rem 0; }
+  @media (max-width: 768px) { .faq-a p { padding-right: 0; } }
 </style>
 </head>
 <body>
@@ -1269,7 +1285,7 @@
     <div class="offer-card reveal">
       <div class="offer-img-wrapper">
         <div class="offer-img-inner">
-          <img class="offer-card-img" src="images/consultation.webp" alt="Consultation" loading="lazy"/>
+          <img class="offer-card-img" src="images/consultation.webp" alt="Free interior design consultation at the Desart studio in Marthandam" loading="lazy"/>
         </div>
         <div class="offer-card-icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
@@ -1284,7 +1300,7 @@
     <div class="offer-card reveal reveal-delay-1">
       <div class="offer-img-wrapper">
         <div class="offer-img-inner">
-          <img class="offer-card-img" src="images/design.webp" alt="Design" loading="lazy"/>
+          <img class="offer-card-img" src="images/design.webp" alt="3D interior design and VR walkthrough by Desart" loading="lazy"/>
         </div>
         <div class="offer-card-icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
@@ -1299,7 +1315,7 @@
     <div class="offer-card reveal reveal-delay-2">
       <div class="offer-img-wrapper">
         <div class="offer-img-inner">
-          <img class="offer-card-img" src="images/offer3.webp" alt="Production" loading="lazy"/>
+          <img class="offer-card-img" src="images/offer3.webp" alt="Modular furniture being made in the Desart factory" loading="lazy"/>
         </div>
         <div class="offer-card-icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
@@ -1314,7 +1330,7 @@
     <div class="offer-card reveal reveal-delay-3">
       <div class="offer-img-wrapper">
         <div class="offer-img-inner">
-          <img class="offer-card-img" src="images/offer1.webp" alt="Execution" loading="lazy"/>
+          <img class="offer-card-img" src="images/offer1.webp" alt="Interior installation on site in Kanyakumari" loading="lazy"/>
         </div>
         <div class="offer-card-icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
@@ -1329,7 +1345,7 @@
     <div class="offer-card reveal reveal-delay-4">
       <div class="offer-img-wrapper">
         <div class="offer-img-inner">
-          <img class="offer-card-img" src="images/offer4.webp" alt="Hand Over" loading="lazy"/>
+          <img class="offer-card-img" src="images/offer4.webp" alt="Finished home interior ready for handover" loading="lazy"/>
         </div>
         <div class="offer-card-icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
@@ -1656,7 +1672,7 @@
         <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="images/SUDHEER V H.png" alt="VH" /></div>
+            <div class="review-avatar"><img src="images/SUDHEER V H.png" alt="" /></div>
             <div>
               <div class="review-name">VH Sudheer</div>
               <!-- <div class="review-meta">Manager, State Bank of India · Local Guide</div> -->
@@ -1670,7 +1686,7 @@
         <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="images/Shijona Brins.png" alt="SJ" /></div>
+            <div class="review-avatar"><img src="images/Shijona Brins.png" alt="" /></div>
             <div>
               <div class="review-name">Shijona Brins</div>
               <!-- <div class="review-meta">Software Associate, UST Global · Local Guide</div> -->
@@ -1685,7 +1701,7 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
         <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="images/Beric John.png" alt="CK" /></div>
+            <div class="review-avatar"><img src="images/Beric John.png" alt="" /></div>
             <div>
               <div class="review-name">Beric John</div>
               <!-- <div class="review-meta">Probationary Officer, Canara Bank</div> -->
@@ -1699,7 +1715,7 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
         <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="images/Berjin Teno J.png" alt="KK" /></div>
+            <div class="review-avatar"><img src="images/Berjin Teno J.png" alt="" /></div>
             <div>
               <div class="review-name">Berjin Teno</div>
               <!-- <div class="review-meta">RTD Engineer, Nestle · Local Guide</div> -->
@@ -1713,7 +1729,7 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
         <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="images/prabin justin.png" alt="PJ" /></div>
+            <div class="review-avatar"><img src="images/prabin justin.png" alt="" /></div>
             <div>
               <div class="review-name">Prabin Justin</div>
               <!-- <div class="review-meta">Health Inspector, TN Govt · Local Guide</div> -->
@@ -1727,7 +1743,7 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
         <!-- <div class="review-card">
           <div class="google-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84z" fill="#EA4335"/></svg></div>
           <div class="review-header">
-            <div class="review-avatar"><img src="https://api.dicebear.com/7.x/personas/svg?seed=Shijinhttps://api.dicebear.com/7.x/initials/svg?seed=SH&backgroundColor=444444&fontFamily=Georgia&fontSize=36&textColor=ffffffbackgroundColor=e8d5f5" alt="SH" /></div>
+            <div class="review-avatar"><img src="https://api.dicebear.com/7.x/initials/svg?seed=SH&backgroundColor=444444&fontFamily=Georgia&fontSize=36&textColor=ffffff" alt="" /></div>
             <div>
               <div class="review-name">Shijin</div>
               <div class="review-meta">MD, Crown Industries · Local Guide</div>
@@ -1751,6 +1767,65 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9,18 15,12 9,6"/></svg>
         </button>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="offer-header-center reveal">
+    <div class="section-label">Good To Know</div>
+    <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    <p class="offer-subtitle">Quick answers about home interiors, modular kitchens and wardrobes in Kanyakumari and Trivandrum.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">Who are the best interior designers in Kanyakumari district?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>Desart Home Interiors is an interior design and build firm based in Marthandam, Kanyakumari, with more than 12 years of experience. We design, manufacture in our own factory and install complete home interiors, modular kitchens and wardrobes across Marthandam, Nagercoil and Trivandrum, so one team is accountable from the first drawing to handover.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">Which areas do you serve?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>We work across Kanyakumari district, including Marthandam, Nagercoil, Kuzhithurai, Thuckalay and Colachel, and across the border in Trivandrum (Thiruvananthapuram). Our studio and factory are in Marthandam.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">How much do home interiors cost in Kanyakumari?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>The cost depends on three things: the grade of plywood and hardware, how much of the work is custom carpentry versus factory-made modular units, and how complex the finishes are. Two homes of the same size can differ by 40% or more. The first consultation is free, and you leave with a realistic budget range before committing to anything.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">How long does a full home interior project take?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>A standard full-home interior takes about 45 days from design sign-off to handover. A single modular kitchen or a set of wardrobes usually takes 3 to 4 weeks. The timeline is written into the agreement.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">Do you manufacture the furniture yourselves?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>Yes. Kitchens, wardrobes, TV units and other cabinetry are built in our own factory in Marthandam using BWP (boiling-water-proof) plywood, sealed edge-banding and branded soft-close hardware suited to the coastal humidity.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">Can I see my home before it is built?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>Yes. We prepare photoreal 3D designs and a 360-degree VR walkthrough of your rooms, so you can review layouts, colours and finishes before manufacturing begins.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">Do you offer a warranty?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>Yes. Units made in our own factory carry a lifetime warranty, and bought-out hardware and appliances carry the manufacturer's warranty. Service calls are handled by our own team.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false">How do I start?
+        <svg viewBox="0 0 24 24" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a"><p>Call or WhatsApp us on +91 88070 40606, email hello@desart.in, or use the contact form on this page to book a free consultation at our Marthandam studio or at your site.</p></div>
     </div>
   </div>
 </section>
@@ -2125,6 +2200,25 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
   });
 
   // ── SCROLL REVEAL ──
+  // ── FAQ ACCORDION ──
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        const panel = item.querySelector('.faq-a');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
   const revealEls = document.querySelectorAll('.reveal');
   const revObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -2166,11 +2260,11 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
       "@id": "https://interiors.desart.in/#organization",
       "name": "Desart Home Interiors",
       "legalName": "Desart Builders Pvt Ltd",
-      "url": "https://www.desart.in/",
+      "url": "https://interiors.desart.in/",
       "logo": {
         "@type": "ImageObject",
         "@id": "https://interiors.desart.in/#logo",
-        "url": "https://interiors.desart.in/logo-dark.png",
+        "url": "https://interiors.desart.in/images/logo-dark.png",
         "caption": "Desart Home Interiors"
       },
       "image": {
@@ -2206,9 +2300,9 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
       "logo": "https://interiors.desart.in/images/logo-dark.png",
       "telephone": "+91-88070-40606",
       "email": "hello@desart.in",
-      "priceRange": "$",
+      "priceRange": "₹₹",
       "parentOrganization": {
-        "@id": "https://www.desart.in/#organization"
+        "@id": "https://interiors.desart.in/#organization"
       },
       "address": {
         "@type": "PostalAddress",
@@ -2393,6 +2487,80 @@ Final outcome came out amazing and it was a greater version of 3D designs they p
           }
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://interiors.desart.in/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who are the best interior designers in Kanyakumari district?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desart Home Interiors is an interior design and build firm based in Marthandam, Kanyakumari, with more than 12 years of experience. We design, manufacture in our own factory and install complete home interiors, modular kitchens and wardrobes across Marthandam, Nagercoil and Trivandrum, so one team is accountable from the first drawing to handover."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work across Kanyakumari district, including Marthandam, Nagercoil, Kuzhithurai, Thuckalay and Colachel, and across the border in Trivandrum (Thiruvananthapuram). Our studio and factory are in Marthandam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do home interiors cost in Kanyakumari?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on three things: the grade of plywood and hardware, how much of the work is custom carpentry versus factory-made modular units, and how complex the finishes are. Two homes of the same size can differ by 40% or more. The first consultation is free, and you leave with a realistic budget range before committing to anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a full home interior project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard full-home interior takes about 45 days from design sign-off to handover. A single modular kitchen or a set of wardrobes usually takes 3 to 4 weeks. The timeline is written into the agreement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you manufacture the furniture yourselves?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Kitchens, wardrobes, TV units and other cabinetry are built in our own factory in Marthandam using BWP (boiling-water-proof) plywood, sealed edge-banding and branded soft-close hardware suited to the coastal humidity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see my home before it is built?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We prepare photoreal 3D designs and a 360-degree VR walkthrough of your rooms, so you can review layouts, colours and finishes before manufacturing begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer a warranty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Units made in our own factory carry a lifetime warranty, and bought-out hardware and appliances carry the manufacturer's warranty. Service calls are handled by our own team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call or WhatsApp us on +91 88070 40606, email hello@desart.in, or use the contact form on this page to book a free consultation at our Marthandam studio or at your site."
+          }
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://interiors.desart.in/#webpage"
+      },
+      "inLanguage": "en-IN"
     },
     {
       "@type": "BreadcrumbList",
